@@ -4,12 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Apply now for Fall 2025 at the Virtual University of Pakistan – Trusted by over half a million students." />
+  <meta property="og:title" content="Virtual University – Fall 2025 Admissions">
+  <meta property="og:description" content="Join Pakistan’s largest online university. Flexible. Trusted. Recognized.">
+  <meta property="og:image" content="https://www.vu.edu.pk/images/vu-logo.png">
+  <meta property="og:url" content="https://www.vu.edu.pk/admissions">
+  <meta name="twitter:card" content="summary_large_image">
   <title>Virtual University – Fall 2025 Admissions</title>
 
-  <!-- Orbitron font for futuristic look -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="icon" href="https://www.vu.edu.pk/favicon.ico" />
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+  <script src="https://unpkg.com/scrollreveal" defer></script>
 
   <style>
     body {
@@ -73,7 +78,7 @@
       margin-top: 30px;
     }
 
-    a.button {
+    a.button, button.button {
       padding: 14px 26px;
       background: #00c9ff;
       color: #0a0f24;
@@ -82,9 +87,11 @@
       border-radius: 6px;
       box-shadow: 0 0 10px #00c9ff, 0 0 20px #00c9ff;
       transition: all 0.3s ease-in-out;
+      border: none;
+      cursor: pointer;
     }
 
-    a.button:hover {
+    a.button:hover, button.button:hover {
       background: #00a3cc;
       box-shadow: 0 0 16px #00c9ff, 0 0 28px #00c9ff;
       color: #fff;
@@ -131,6 +138,16 @@
         flex-direction: column;
         align-items: center;
       }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      input[type="email"], button.button {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -151,19 +168,19 @@
       <p>Join Pakistan’s most innovative online education platform and shape your future with technology-driven learning. Flexible, affordable, and trusted by hundreds of thousands of students nationwide.</p>
 
       <div class="btn-group">
-        <a class="button" href="https://www.vu.edu.pk/Apply/Login.aspx" target="_blank">Apply Now</a>
-        <a class="button" href="https://www.vu.edu.pk/prospectus/default" target="_blank">Download Prospectus</a>
-        <a class="button" href="https://www.vu.edu.pk/Fee/FeeCalculator" target="_blank">Fee Calculator</a>
-        <a class="button" href="https://www.vu.edu.pk/Admissions/AdmissionProcedure" target="_blank">Academic Programs – Fall 2025</a>
+        <a class="button" href="https://www.vu.edu.pk/Apply/Login.aspx" target="_blank" aria-label="Apply Now for Fall 2025 Admissions">Apply Now</a>
+        <a class="button" href="https://www.vu.edu.pk/prospectus/default" target="_blank" aria-label="Download VU Prospectus">Download Prospectus</a>
+        <a class="button" href="https://www.vu.edu.pk/Fee/FeeCalculator" target="_blank" aria-label="Calculate Fee for Fall 2025">Fee Calculator</a>
+        <a class="button" href="https://www.vu.edu.pk/Admissions/AdmissionProcedure" target="_blank" aria-label="View Academic Programs">Academic Programs – Fall 2025</a>
       </div>
     </section>
 
     <section>
       <h2>Stay Updated</h2>
       <p>Get updates about deadlines, scholarships, and programs.</p>
-      <form action="#" method="POST">
+      <form action="https://example.com/subscribe" method="POST">
         <input type="email" name="email" placeholder="Your Email" required />
-        <button type="submit" class="button" style="margin-left: 10px;">Subscribe</button>
+        <button type="submit" class="button">Subscribe</button>
       </form>
     </section>
   </div>
@@ -172,38 +189,35 @@
     &copy; 2025 Virtual University of Pakistan – All rights reserved.
   </footer>
 
-  <!-- Particles.js Config -->
   <script>
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 70 },
-        size: { value: 3 },
-        color: { value: "#00c9ff" },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: "#00c9ff",
-          opacity: 0.4,
-          width: 1
+    window.addEventListener('DOMContentLoaded', () => {
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 70 },
+          size: { value: 3 },
+          color: { value: "#00c9ff" },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#00c9ff",
+            opacity: 0.4,
+            width: 1
+          }
+        },
+        interactivity: {
+          events: {
+            onhover: { enable: true, mode: "repulse" }
+          }
         }
-      },
-      interactivity: {
-        events: {
-          onhover: { enable: true, mode: "repulse" }
-        }
-      }
+      });
+
+      ScrollReveal().reveal('.container', {
+        duration: 1000,
+        origin: 'bottom',
+        distance: '50px',
+        easing: 'ease-in-out'
+      });
     });
   </script>
-
-  <!-- ScrollReveal Config -->
-  <script>
-    ScrollReveal().reveal('.container', {
-      duration: 1000,
-      origin: 'bottom',
-      distance: '50px',
-      easing: 'ease-in-out'
-    });
-  </script>
-
 </body>
 </html>
