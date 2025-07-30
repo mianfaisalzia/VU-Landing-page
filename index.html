@@ -5,70 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Apply now for Fall 2025 at the Virtual University of Pakistan – Trusted by over half a million students." />
   <title>Virtual University – Fall 2025 Admissions</title>
+
+  <!-- Orbitron font for futuristic look -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #001f3f, #0074d9);
-      color: #fff;
-      background-image: url('https://images.unsplash.com/photo-1608349874987-d875b1b4e56d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0a0f24;
+      color: #ffffff;
+      overflow-x: hidden;
     }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #0a0f24;
+      z-index: -1;
+    }
+
     .container {
       max-width: 960px;
       margin: auto;
-      padding: 40px 20px;
-      background-color: rgba(0, 0, 0, 0.6);
+      padding: 50px 25px;
+      background-color: rgba(10, 15, 36, 0.88);
       border-radius: 12px;
       margin-top: 60px;
+      box-shadow: 0 0 40px rgba(0, 255, 255, 0.1);
     }
+
     header {
       text-align: center;
       margin-bottom: 40px;
     }
+
     header img {
       max-width: 140px;
+      margin-bottom: 20px;
     }
+
     h1 {
-      font-size: 2.5em;
+      font-size: 2.2em;
       margin-bottom: 10px;
+      color: #00d8ff;
     }
+
     .tagline {
       font-size: 1.2em;
-      color: #d1ecff;
+      color: #c0eaff;
     }
+
     .sub-tagline {
       font-size: 1em;
-      color: #a9cce3;
+      color: #9ec2e4;
       margin-bottom: 30px;
     }
+
     .btn-group {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 15px;
+      gap: 16px;
       margin-top: 30px;
     }
+
     a.button {
-      padding: 14px 28px;
-      background-color: #0074d9;
-      color: #fff;
+      padding: 14px 26px;
+      background: #00c9ff;
+      color: #0a0f24;
+      font-weight: bold;
       text-decoration: none;
       border-radius: 6px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
+      box-shadow: 0 0 10px #00c9ff, 0 0 20px #00c9ff;
+      transition: all 0.3s ease-in-out;
     }
+
     a.button:hover {
-      background-color: #005fa3;
+      background: #00a3cc;
+      box-shadow: 0 0 16px #00c9ff, 0 0 28px #00c9ff;
+      color: #fff;
     }
+
+    h2 {
+      text-align: center;
+      color: #ffffff;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #c4e3f3;
+      font-size: 1em;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    form {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    input[type="email"] {
+      padding: 10px;
+      width: 260px;
+      border: none;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
     footer {
       text-align: center;
       font-size: 0.9em;
-      color: #cfd8dc;
+      color: #8eaecb;
       margin-top: 60px;
+      margin-bottom: 20px;
     }
+
     @media (max-width: 600px) {
       .btn-group {
         flex-direction: column;
@@ -79,17 +136,19 @@
 </head>
 <body>
 
+  <div id="particles-js"></div>
+
   <div class="container">
     <header>
-      <img src="https://www.vu.edu.pk/images/vu-logo-white.png" alt="VU Logo" />
+      <img src="vu-logo.png" alt="Virtual University Logo" />
       <h1>Virtual University of Pakistan</h1>
       <p class="tagline">“599,112 Leaders trusted us”</p>
       <p class="sub-tagline">Pakistan’s largest online university</p>
     </header>
 
     <section>
-      <h2 style="text-align: center;">Fall 2025 Admissions Now Open</h2>
-      <p style="text-align: center;">Empowering future innovators through technology-driven education. Join thousands of learners from across Pakistan and beyond. 100% online, affordable, and flexible.</p>
+      <h2>Fall 2025 Admissions Now Open</h2>
+      <p>Join Pakistan’s most innovative online education platform and shape your future with technology-driven learning. Flexible, affordable, and trusted by hundreds of thousands of students nationwide.</p>
 
       <div class="btn-group">
         <a class="button" href="https://www.vu.edu.pk/Apply/Login.aspx" target="_blank">Apply Now</a>
@@ -98,11 +157,53 @@
         <a class="button" href="https://www.vu.edu.pk/Admissions/AdmissionProcedure" target="_blank">Academic Programs – Fall 2025</a>
       </div>
     </section>
+
+    <section>
+      <h2>Stay Updated</h2>
+      <p>Get updates about deadlines, scholarships, and programs.</p>
+      <form action="#" method="POST">
+        <input type="email" name="email" placeholder="Your Email" required />
+        <button type="submit" class="button" style="margin-left: 10px;">Subscribe</button>
+      </form>
+    </section>
   </div>
 
   <footer>
     &copy; 2025 Virtual University of Pakistan – All rights reserved.
   </footer>
+
+  <!-- Particles.js Config -->
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 70 },
+        size: { value: 3 },
+        color: { value: "#00c9ff" },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#00c9ff",
+          opacity: 0.4,
+          width: 1
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" }
+        }
+      }
+    });
+  </script>
+
+  <!-- ScrollReveal Config -->
+  <script>
+    ScrollReveal().reveal('.container', {
+      duration: 1000,
+      origin: 'bottom',
+      distance: '50px',
+      easing: 'ease-in-out'
+    });
+  </script>
 
 </body>
 </html>
